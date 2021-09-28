@@ -20,7 +20,7 @@ namespace Crawco_Automation.Fearures
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class CrawcoUIFeature
+    public partial class CrawcoApiFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace Crawco_Automation.Fearures
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "CrawcoUI.feature"
+#line 1 "CrawcoApi.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,7 +48,7 @@ namespace Crawco_Automation.Fearures
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Fearures", "CrawcoUI", "\tSimple calculator for adding two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Fearures", "CrawcoApi", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,9 +63,9 @@ namespace Crawco_Automation.Fearures
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "CrawcoUI")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "CrawcoApi")))
             {
-                global::Crawco_Automation.Fearures.CrawcoUIFeature.FeatureSetup(null);
+                global::Crawco_Automation.Fearures.CrawcoApiFeature.FeatureSetup(null);
             }
         }
         
@@ -92,16 +92,16 @@ namespace Crawco_Automation.Fearures
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Verify crawco home facebook page link")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "CrawcoUI")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Testcase1")]
-        public virtual void VerifyCrawcoHomeFacebookPageLink()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add two numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "CrawcoApi")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("TestCase2")]
+        public virtual void AddTwoNumbers()
         {
             string[] tagsOfScenario = new string[] {
-                    "Testcase1"};
+                    "TestCase2"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify crawco home facebook page link", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -121,11 +121,8 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
- testRunner.Given("I have opened crawco home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 7
- testRunner.Then("I verify facebook page link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 5
+ testRunner.Given("I have created a reqres request and save response as \'response\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             }
             this.ScenarioCleanup();

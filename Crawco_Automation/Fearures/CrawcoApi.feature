@@ -1,8 +1,6 @@
 ﻿Feature: CrawcoApi
 
-@mytag
+@TestCase2
 Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+	Given I have created a reqres request '4' and save response as 'response'
+	

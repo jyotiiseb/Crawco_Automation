@@ -7,7 +7,6 @@
   <ItemGroup>
     <Folder Include="Browser\" />
     <Folder Include="Driver\" />
-    <Folder Include="StepDef\" />
     <Folder Include="Pages\" />
   </ItemGroup>
 

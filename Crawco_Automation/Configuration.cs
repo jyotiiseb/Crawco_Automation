@@ -28,5 +28,6 @@ namespace Crawco_Automation
 
         public static string ComputerDatabaseUrl => string.Format(getConfigValue("computerDatabaseUrl"));
         public static string Browser => string.Format(getConfigValue("browser"));
+        public static string ReqresApi => string.Format(getConfigValue("reqres"));
     }
 }
